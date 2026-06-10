@@ -4,31 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEEP - Recicla-tec</title>
-
 
     <!--Links para logotipo favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <!--Links para imagem da aba dos navegadores-->
-    <link rel="shortcut icon" href="./CEEPlogobrasao-main/ceep.webp" type="image/x-icon">
+
+    <!--link para imagem da aba dos navegadores-->
+    <link rel="shortcut icon" href="./CEEPlogobrasao-main/logoceep/favicon-16x16.png" type="image/x-icon">
     <title>Recicla-tec</title>
     <!--link para o Estilo Externo-->
     <link rel="stylesheet" href="./style.css">
-<style>
-
-    
-</style>
 </head>
 
 <body>
     <header>
-        <div> class= "logo"
+        <div class="logo">
             <h2>CEEP CIANORTE</h2>
         </div>
+        <nav>
+            <a href="https://ceepcianorte.com.br">Início</a>
+            <a href="#">Cursos</a>
+            <a href="">E-Lixo (Descarte)</a>
+        </nav>
     </header>
+
+    <div class="hero">
+        <h1>Campanha de Descarte de Lixo Eletrônico</h1>
+        <p>Ajude o meio ambiente e o nosso colégio. Cadastre o equipamento que você deseja doar ou descartar!</p>
+    </div>
+    <div> class="container"
+        <h2>Formulário de Cadastro de E-Lixo</h2>
+        <form action="/processar-descartar.php" method="post"><label for="nome">Seu Nome (Aluno/Professor/Comunidade):></label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="contato">E-mail ou Whatsapp</label>
+        </form>
+    </div>
 </body>
 
 </html>

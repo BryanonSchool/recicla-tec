@@ -5,3 +5,30 @@ body{
     background-color: #f4f4f9;
     color: #333;
 }
+
+header{
+    background-color: #003366;
+    color: white;
+    padding: 15px 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: #4caf50
+}
+
+.hero{
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
