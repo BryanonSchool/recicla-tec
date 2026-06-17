@@ -34,12 +34,33 @@
         <h1>Campanha de Descarte de Lixo Eletrônico</h1>
         <p>Ajude o meio ambiente e o nosso colégio. Cadastre o equipamento que você deseja doar ou descartar!</p>
     </div>
-    <div> class="container"
+    <div class="container">
         <h2>Formulário de Cadastro de E-Lixo</h2>
-        <form action="/processar-descartar.php" method="post"><label for="nome">Seu Nome (Aluno/Professor/Comunidade):></label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="contato">E-mail ou Whatsapp</label>
-        </form>
+        <form action="/processar_descartar.php" method="post">
+            <label for="nome">Seu Nome (Aluno/Professor/Comunidade):</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="contato">E-mail ou Whatsapp:</label>
+            <input type="text" id="contato" name="contato" required>
+
+            <label for="tipo_equipamento"> Tipo de equipamento:</label>
+            <select id="tipo_equipamento" name="tipo_equipamento" required>
+                <option value="">Seleciona...</option>
+                <option value="computador">Computador / Notebook</option>
+                <option value="celular">Celular / Tablet</option>
+                <option value="periferico">Periféricos (Teclado, Mouse, Cabos)</option>
+                <option value="bateria">Pilhas e Baterias</option>
+                <option value="outro">Outros (Especifique abaixo) </option>
+            </select>
+            <label for="estado">Estado do Equipamento:</label>
+            <select id="estado" name="estado">
+            <option value="funcionando">Funcionando (Doação):</option>
+            <option value="estragado">Estragado (Descarte / Reciclagem)</option>
+            <option value="parcial">Funcionando parcialmente</option>
+        </select>
+        <label for="descricao">Descrição (Marca / model / problema se houver)</label>
+        <textarea id="descricao" name="descricao" rows="4"></textarea>
+        <button type= "submit">Registrar Equipamento</button>
+    </form>
     </div>
 </body>
 
